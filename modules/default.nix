@@ -78,7 +78,7 @@ in
           type = types.str;
         };
         pushFilter = lib.mkOption {
-          type = types.str;
+          type = types.nullOr types.str;
           default = null;
         };
         extraCaches = lib.mkOption {
